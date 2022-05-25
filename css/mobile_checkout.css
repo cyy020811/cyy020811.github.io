@@ -1,0 +1,27 @@
+@media screen and (max-width:1000px){
+    .vert-seperator, #right-box{
+        display: none;
+    }
+    #left-box{
+        width: 100vw;
+        padding: 0em 2em 0em;
+    }
+    #back{
+        display: none;
+    }
+    .mobile{
+        font-size: x-large;
+    }
+    #mobile-back > .overlay{
+        top: 9.5px;
+    }
+    #mobile-navbar{
+        justify-content: space-between;
+        padding: 2em 2em 0em;
+    }
+    #shipping-address{
+        padding-bottom: 2em;
+        margin-bottom: 2em;
+        border-bottom: 2px solid white;
+    }
+}

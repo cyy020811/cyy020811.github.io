@@ -1,0 +1,29 @@
+@media screen and (min-width: 760px){
+    .mobile-ad{
+        display: none;
+    }
+    #swiper{
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 760px){
+    .mobile-ad{
+        display: block;
+    }
+    #swiper{
+        display: none;
+    }
+    #shop-now-btn{
+        transform: translateX(-50%);
+        padding: 8px 12px;
+        font-size: small;
+    }
+    .new-image-btn{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 760px){
+    
+}

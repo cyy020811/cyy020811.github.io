@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"><![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://use.typekit.net/mjr7mjf.css">
+        <link rel="stylesheet" href="https://use.typekit.net/tiw7qxb.css">
+        <link rel="stylesheet" href="../css/reset.css">
+        <link rel="stylesheet" href="../css/typography.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/payment.css">
+        <link rel="stylesheet" href="../css/mobile_menu.css">
+        <link rel="stylesheet" href="../css/mobile_payment.css">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <nav id = "navbar">
+            <div class = "inline-block doublefont-container">
+                <a class = "label" href="index.html">Home</a>
+                <a class = "overlay" href="index.html">Home</a>
+            </div>
+            <div class = "inline-block doublefont-container">
+                <a class = "label" href="about.html">About</a>
+                <a class = "overlay" href="about.html">About</a>
+            </div>
+            <div class = "inline-block" id = "logo-container">
+                <img id = "logo" src="../resources/logo.svg" alt="Logo Image">
+                <div class = "inline-block doublefont-container">
+                    <h1 class = "label">Egg<br>Records</h1>
+                    <h1 class = "overlay">Egg<br>Records</h1>
+                </div>
+            </div>
+            
+            <div class = "inline-block doublefont-container">
+                <a class = "label" href="shop.html">Shop</a>
+                <a class = "overlay" href="shop.html">Shop</a>
+            </div>
+            <div class = "inline-block doublefont-container">
+                <a class = "label" href="cart.html">Cart</a>
+                <a class = "overlay" href="cart.html">Cart</a>
+            </div>
+        </nav>
+        <nav id = "mobile-navbar">
+            <img id = "logo" src="../resources/logo.svg" alt="">
+            <div class = "inline-block doublefont-container" onclick="home()">
+                <h1 class = "label">Egg<br>Records</h1>
+                <h1 class = "overlay">Egg<br>Records</h1>
+            </div>
+            <div class = "dropdown inline-block">
+                <input id="check" type="checkbox" name="menu">
+                <label for="check"><img class = "icon" id = "hamburger-menu-icon" src="../resources/hamburger_menu.svg" alt="hamburger-menu"></label>
+                <img class = "icon" id = "cart-icon" src="../resources/cart.svg" alt="cart" onclick="cart()">
+                <div class = "dropdown-content" >
+                    <ul id = "mobile-menu">
+                        <li class= "doublefont-container">
+                            <a class = "label" href="index.html">Home</a>
+                            <a class = "overlay" href="index.html">Home</a>
+                        </li>
+                        <li class= "doublefont-container">
+                            <a class = "label" href="about.html">About</a>
+                            <a class = "overlay" href="about.html">About</a>
+                        </li>
+                        <li class= "doublefont-container">
+                            <a class = "label" href="shop.html">Shop</a>
+                            <a class = "overlay" href="shop.html">Shop</a>
+                        </li>
+                        <li class= "doublefont-container">
+                            <a class = "label" href="cart.html">Cart</a>
+                            <a class = "overlay" href="cart.html">Cart</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div id = "page-content" class="flex">
+            <div id = "left-box">
+                <div id = "back" class="doublefont-container">
+                    <a class = "label" href= "cart.html">&lt;BACK</a>
+                    <a class = "overlay" href= "cart.html">&lt;BACK</a>
+                </div>
+                <form id = "info" action="comfirmation.html" method="get">
+                    <div class = "address">
+                        <div class= "doublefont-container" >
+                            <h3 class= "label">Billing address</h3>
+                            <h3 class= "overlay">Billing address</h3>
+                        </div>
+                        <div class= "din-alternate white customer-info">
+                            <p>Name: Jim Yang</p>
+                            <p>Email: 213123@gmail.com</p>
+                            <p>Address: 123 Happy St Melbourne VIC 3000</p>
+                        </div>
+                    </div>
+                    <div id = "shipping-address" class = "address">
+                        <div class= "doublefont-container" >
+                            <h3 class= "label">Shipping address</h3>
+                            <h3 class= "overlay">Shipping address</h3>
+                        </div>
+                        <div class= "din-alternate white customer-info">
+                            <p>Name: Jim Yang</p>
+                            <p>Email: 213123@gmail.com</p>
+                            <p>Address: 123 Happy St Melbourne VIC 3000</p>
+                        </div>
+                    </div>
+                    <div id = "payment-details">
+                        <div class="flex">
+                            <div class= "inline-block doublefont-container" >
+                                <h3 class= "label">Payment details</h3>
+                                <h3 class= "overlay">Payment details</h3>
+                            </div>
+                        </div>
+                        <div class = "flex col">
+                            <input class= "din yellow sa" type="text" name="card-num" placeholder="CARD NUMBER" required>
+                            <input class= "din yellow sa" type="text" name="name-on-card" placeholder="NAME ON CARD" required>
+                            <div class= "flex">
+                                <input class= "din yellow sa" type="text" name="exp-date" placeholder="EXPIRATION DATE(MM/YY)" required>
+                                <input class= "din yellow sa" type="text" name="cvv" placeholder="CVV" required>
+                            </div>                                                  
+                        </div>
+                    </div>
+    
+                </form>
+                <div id = "mobile-btn-content">
+                    <button type = "submit" class="din" id = "proceed-to-payment" onclick="placeOrder()">PLACE ORDER</button>
+                </div>
+            </div>
+            <div class = "inline-block vert-seperator">
+                <div class = "vl"></div>
+            </div>
+            <div id = "right-box">
+                <div id = "products" class="flex col">
+                    <div class= "product">
+                        <div class= "album-cover-container inline-block">
+                            <img class= "album-cover" src="../album-covers/ac1.jpeg" alt="">
+                        </div>
+                        <div class= "info-container inline-block">
+                            <div class = "inline-block album-info">
+                                <p class = "larger white din-alternate">Ramones</p>
+                                <p class = "red din-alternate">The Beatles</p>
+                            </div>
+                        </div>
+                        <div class= "purchase-num inline-block">
+                            <span class= "larger red din-alternate">$50.00AUD </span>
+                            <span  class= "larger white din-alternate">X </span>
+                            <span class= "larger red din-alternate">1</span>
+                        </div>
+                    </div>
+                    <div class= "product">
+                        <div class= "album-cover-container inline-block">
+                            <img class= "album-cover" src="../album-covers/ac2.jpeg" alt="">
+                        </div>
+                        <div class= "info-container inline-block">
+                            <div class = "inline-block album-info">
+                                <p class = "larger white din-alternate">Unhappy Accident</p>
+                                <p class = "red din-alternate">The Beatles</p>
+                            </div>
+                        </div>
+                        <div class= "purchase-num inline-block">
+                            <span class= "larger red din-alternate">$50.00AUD </span>
+                            <span  class= "larger white din-alternate">X </span>
+                            <span class= "larger red din-alternate">1</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div id = bottom></div> -->
+                <div id = "total-price">
+                    <div class= "inline-block doublefont-container">
+                        <h3 class= "medium label">Total:</h3>
+                        <h3 class= "medium overlay">Total:</h3>
+                    </div>
+                    <div id = "total" class= "inline-block doublefont-container">
+                        <h3 class= "medium price label">$100.00AUD</h3>
+                        <h3 class= "medium price overlay red">$100.00AUD</h3>
+                    </div>
+                </div>
+                <div id = "bottom-content">
+                    <button type = "submit" class="din" id = "proceed-to-payment" onclick="placeOrder()">PLACE ORDER</button>
+                </div>
+            </div>
+        </div>
+        
+        <script src="../js/payment.js" async defer></script>
+        <script src="../js/mobile_menu.js" async defer></script>
+    </body>
+</html>

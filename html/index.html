@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../css/reset.css">
+        <link rel="stylesheet" href="https://use.typekit.net/mjr7mjf.css">
+        <link rel="stylesheet" href="https://use.typekit.net/tiw7qxb.css">
+        <link rel="stylesheet" href="../css/typography.css">
+        <link rel="stylesheet" href="../css/home.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/mobile_menu.css">
+        <link rel="stylesheet" href="../css/mobile_index.css">
+    </head>
+    <body>
+        <nav id = "navbar">
+            <div class = "inline-block doublefont-container">
+                <a class = "label" href="index.html">Home</a>
+                <a class = "overlay" href="index.html">Home</a>
+            </div>
+            <div class = "inline-block doublefont-container">
+                <a class = "label" href="about.html">About</a>
+                <a class = "overlay" href="about.html">About</a>
+            </div>
+            <div class = "inline-block" id = "logo-container">
+                <img id = "logo" src="../resources/logo.svg" alt="Logo Image">
+                <div class = "inline-block doublefont-container">
+                    <h1 class = "label">Egg<br>Records</h1>
+                    <h1 class = "overlay">Egg<br>Records</h1>
+                </div>
+            </div>
+            
+            <div class = "inline-block doublefont-container">
+                <a class = "label" href="shop.html">Shop</a>
+                <a class = "overlay" href="shop.html">Shop</a>
+            </div>
+            <div class = "inline-block doublefont-container">
+                <a class = "label" href="cart.html">Cart</a>
+                <a class = "overlay" href="cart.html">Cart</a>
+            </div>
+        </nav>
+        <nav id = "mobile-navbar">
+            <img id = "logo" src="../resources/logo.svg" alt="">
+            <div class = "inline-block doublefont-container" onclick="home()">
+                <h1 class = "label">Egg<br>Records</h1>
+                <h1 class = "overlay">Egg<br>Records</h1>
+            </div>
+            <div class = "dropdown inline-block">
+                <input id="check" type="checkbox" name="menu">
+                <label for="check"><img class = "icon" id = "hamburger-menu-icon" src="../resources/hamburger_menu.svg" alt="hamburger-menu"></label>
+                <img class = "icon" id = "cart-icon" src="../resources/cart.svg" alt="cart" onclick="cart()">
+                <div class = "dropdown-content" >
+                    <ul id = "mobile-menu">
+                        <li class= "doublefont-container">
+                            <a class = "label" href="index.html">Home</a>
+                            <a class = "overlay" href="index.html">Home</a>
+                        </li>
+                        <li class= "doublefont-container">
+                            <a class = "label" href="about.html">About</a>
+                            <a class = "overlay" href="about.html">About</a>
+                        </li>
+                        <li class= "doublefont-container">
+                            <a class = "label" href="shop.html">Shop</a>
+                            <a class = "overlay" href="shop.html">Shop</a>
+                        </li>
+                        <li class= "doublefont-container">
+                            <a class = "label" href="cart.html">Cart</a>
+                            <a class = "overlay" href="cart.html">Cart</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class = "inline-block ad-container">
+            <img id = "ad" src="../resources/ad1.png" alt="Advertisement">
+            <button id = "prev-img" class = "new-image-btn"><img class = "arrow" src="../resources/left.svg" alt="left arrow" onclick="prevImg()"></button>
+            <button id = "next-img" class = "new-image-btn"><img class = "arrow" src="../resources/right.svg" alt="right arrow" onclick="nextImg()"></button>
+            <button class = "content" id = "shop-now-btn" onclick="shopNow()">Shop now</button>
+            <div class= "inline-block" id = "swiper">
+                <span class="dot yellow-dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+        </div>
+
+        <div class = "inline-block ad-container mobile-ad">
+            <img id = "ad" src="../resources/ad2.png" alt="Advertisement">
+            <button class = "content" id = "shop-now-btn" onclick="shopNow()">Shop now</button>
+        </div>
+
+        <div class = "inline-block ad-container mobile-ad">
+            <img id = "ad" src="../resources/ad3.png" alt="Advertisement">
+            <button class = "content" id = "shop-now-btn" onclick="shopNow()">Shop now</button>
+        </div>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        
+        <script src="../js/index.js" async defer></script>
+        <script src="../js/mobile_menu.js" async defer></script>
+    </body>
+</html>
+

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../css/reset.css">
+        <link rel="stylesheet" href="https://use.typekit.net/mjr7mjf.css">
+        <link rel="stylesheet" href="https://use.typekit.net/tiw7qxb.css">
+        <link href="http://fonts.cdnfonts.com/css/din-alternate" rel="stylesheet">
+        <link rel="stylesheet" href="../css/typography.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/product.css">
+        <link rel="stylesheet" href="../css/mobile_product.css">
+        <link rel="stylesheet" href="../css/mobile_menu.css">
+    </head>
+    <body>
+        <nav id = "navbar">
+            <div class = "inline-block doublefont-container">
+                <a class = "label" href="index.html">Home</a>
+                <a class = "overlay" href="index.html">Home</a>
+            </div>
+            <div class = "inline-block doublefont-container">
+                <a class = "label" href="about.html">About</a>
+                <a class = "overlay" href="about.html">About</a>
+            </div>
+            <div class = "inline-block" id = "logo-container">
+                <img id = "logo" src="../resources/logo.svg" alt="Logo Image">
+                <div class = "inline-block doublefont-container">
+                    <h1 class = "label">Egg<br>Records</h1>
+                    <h1 class = "overlay">Egg<br>Records</h1>
+                </div>
+            </div>
+            
+            <div class = "inline-block doublefont-container">
+                <a class = "label" href="shop.html">Shop</a>
+                <a class = "overlay" href="shop.html">Shop</a>
+            </div>
+            <div class = "inline-block doublefont-container">
+                <a class = "label" href="cart.html">Cart</a>
+                <a class = "overlay" href="cart.html">Cart</a>
+            </div>
+        </nav>
+        <nav id = "mobile-navbar">
+            <div id = "mobile-back" class = "product-nav doublefont-container">
+                <a class = "mobile label" href= "shop.html">&lt;BACK</a>
+                <a class = "mobile overlay" href= "shop.html">&lt;BACK</a>
+            </div>
+            <div class = "dropdown inline-block">
+                <input id="check" type="checkbox" name="menu">
+                <label for="check"><img class = "icon" id = "hamburger-menu-icon" src="../resources/hamburger_menu.svg" alt="hamburger-menu"></label>
+                <img class = "icon" id = "cart-icon" src="../resources/cart.svg" alt="cart" onclick="cart()">
+                <div class = "dropdown-content" >
+                    <ul id = "mobile-menu">
+                        <li class= "doublefont-container">
+                            <a class = "label" href="index.html">Home</a>
+                            <a class = "overlay" href="index.html">Home</a>
+                        </li>
+                        <li class= "doublefont-container">
+                            <a class = "label" href="about.html">About</a>
+                            <a class = "overlay" href="about.html">About</a>
+                        </li>
+                        <li class= "doublefont-container">
+                            <a class = "label" href="shop.html">Shop</a>
+                            <a class = "overlay" href="shop.html">Shop</a>
+                        </li>
+                        <li class= "doublefont-container">
+                            <a class = "label" href="cart.html">Cart</a>
+                            <a class = "overlay" href="cart.html">Cart</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class = "inline-block side-space"></div>
+        <div id = "page-content" class = "inline-block">
+            <div id = "back" class = "doublefont-container">
+                <a class = "label" href= "shop.html">&lt;BACK</a>
+                <a class = "overlay" href= "shop.html">&lt;BACK</a>
+            </div>
+            <div id = "product-container">
+                <div class= "bgwhite inline-block" id = "album-img-container">
+                    <img src="../album-covers/ac3.jpeg" alt="album-cover">
+                </div>
+                <div class= "inline-block" id = "seperator"></div>
+                <div id = "info-and-price" class= "inline-block">
+                    <div id = "name-and-price" class= "inline-block">
+                        <div id = "names" class = "inline-block">
+                            <p class = "din-alternate white" id = "album-name">Battlehorn</p>
+                            <p class= "din-alternate red" id = "artist-name">Westlife</p>
+                        </div>
+                        <div class = "bgwhite inline-block" id = "purchase">
+                            <div class = "din inline-block" id = "price">PRICE: $50.00 AUD</div>
+                            <button id = "add-to-cart-btn" class = "din inline-block">ADD TO CART</button>
+                            <div id = "added-to-cart" class = "din hide">ADDED TO CART</div>
+                        </div>
+                    </div>
+                    
+                    <div id = "info-tracklist">
+                        <button class= "din-alternate red" id = "see-info">INFO</button>
+                        <button class= "din-alternate white" id = "see-tracklist">TRACKLIST</button>
+                        <div class= "white-bg" id = "text">
+                            <p class = "red din-alternate" id = "info">Lorem ipsum dolor sit amet,
+                                 consectetur adipiscing elit. Fusce vestibulum ipsum non rutrum 
+                                 volutpat. Aenean porta tempor ex id elementum. Orci varius natoque
+                                  penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                                Cras at augue massa. Sed at fermentum leo. Duis et erat et risus
+                                cursus tempus eget a nisl.
+                            </p>
+                            <p class = "din-alternate white hide" id = "tracklist"></p>
+                        </div>
+                    </div>
+                    <div class = "bgwhite inline-block" id = "mobile-purchase">
+                        <div class = "din inline-block" id = "mobile-price">PRICE: $50.00 AUD</div>
+                        <button id = "mobile-add-to-cart-btn" class = " din inline-block">ADD TO CART</button>
+                        <div id = "mobile-added-to-cart" class = "din hide">ADDED TO CART</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class= "inline-block side-space"></div>
+        <script src="../js/product.js" async defer></script>
+        <script src="../js/mobile_menu.js" async defer></script>
+    </body>
+</html>

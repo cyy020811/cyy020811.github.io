@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://use.typekit.net/mjr7mjf.css">
+        <link rel="stylesheet" href="https://use.typekit.net/tiw7qxb.css">
+        <link rel="stylesheet" href="../css/reset.css">
+        <link rel="stylesheet" href="../css/typography.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/shop.css">
+        <link rel="stylesheet" href="../css/mobile_menu.css">
+        <link rel="stylesheet" href="../css/mobile_shop.css">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <nav id = "navbar">
+            <div class = "inline-block doublefont-container">
+                <a class = "label" href="index.html">Home</a>
+                <a class = "overlay" href="index.html">Home</a>
+            </div>
+            <div class = "inline-block doublefont-container">
+                <a class = "label" href="about.html">About</a>
+                <a class = "overlay" href="about.html">About</a>
+            </div>
+            <div class = "inline-block" id = "logo-container">
+                <img id = "logo" src="../resources/logo.svg" alt="Logo Image">
+                <div class = "inline-block doublefont-container">
+                    <h1 class = "label">Egg<br>Records</h1>
+                    <h1 class = "overlay">Egg<br>Records</h1>
+                </div>
+            </div>
+            
+            <div class = "inline-block doublefont-container">
+                <a class = "label" href="shop.html">Shop</a>
+                <a class = "overlay" href="shop.html">Shop</a>
+            </div>
+            <div class = "inline-block doublefont-container">
+                <a class = "label" href="cart.html">Cart</a>
+                <a class = "overlay" href="cart.html">Cart</a>
+            </div>
+        </nav>
+        <nav id = "mobile-navbar">
+            <img id = "logo" src="../resources/logo.svg" alt="">
+            <div class = "inline-block doublefont-container" onclick="home()">
+                <h1 class = "label">Egg<br>Records</h1>
+                <h1 class = "overlay">Egg<br>Records</h1>
+            </div>
+            <div class = "dropdown inline-block">
+                <input id="check" type="checkbox" name="menu">
+                <label for="check"><img class = "icon" id = "hamburger-menu-icon" src="../resources/hamburger_menu.svg" alt="hamburger-menu"></label>
+                <img class = "icon" id = "cart-icon" src="../resources/cart.svg" alt="cart" onclick="cart()">
+                <div class = "dropdown-content" >
+                    <ul id = "mobile-menu">
+                        <li class= "doublefont-container">
+                            <a class = "label" href="index.html">Home</a>
+                            <a class = "overlay" href="index.html">Home</a>
+                        </li>
+                        <li class= "doublefont-container">
+                            <a class = "label" href="about.html">About</a>
+                            <a class = "overlay" href="about.html">About</a>
+                        </li>
+                        <li class= "doublefont-container">
+                            <a class = "label" href="shop.html">Shop</a>
+                            <a class = "overlay" href="shop.html">Shop</a>
+                        </li>
+                        <li class= "doublefont-container">
+                            <a class = "label" href="cart.html">Cart</a>
+                            <a class = "overlay" href="cart.html">Cart</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class = "page-content">
+            <div class = "inline-block genre-container">
+                <div class = "above-genres">
+                    <div class = "top-left inline-block doublefont-container">
+                        <h2 class = "label">Genres</h2>
+                        <h2 class = "overlay">Genres</h2>
+                    </div>
+                    <div id = "all-genres" class = "top-right inline-block doublefont-container">
+                        <h2 class = "label">Show all</h2>
+                        <h2 class= "overlay">Show all</h2>                    
+                    </div>
+                </div>
+                <div id = "genres">
+                </div>
+            </div>
+            <div class = "inline-block vert-seperator">
+                <div class = "vl"></div>
+            </div>
+            <div class = "inline-block product-list-container">
+                <div class= "above-products">
+                    <div class = "bottom-left inline-block doublefont-container">
+                        <h2 class = "larger-size label">All</h2>
+                        <h2 class = "larger-size overlay">All</h2>
+                    </div>          
+                    <input class= "din bottom-right inline-block" placeholder="Search..." type="search">
+                </div>
+                <div class = "hori-seperator">
+                    <div class = "hl"></div>
+                </div>
+                <div id = product-list>
+                </div>
+            </div>
+            
+        </div>
+        <div class = "pages-container">
+            <div id = "prev" class = "inline-block doublefont-container">
+                <h2 class = "label">Prev</h2>
+                <h2 class = "overlay">Prev</h2>
+            </div>
+            <a class = "din white" href="shop.html">1</a>
+            <a class = "din red" href="page2.html">2</a>
+            <a class = "din white" href="">3</a>
+            <p class= "din white inline-block">...</p>
+            <a class = "din white" href="">8</a>
+            <a class = "din white" href="">9</a>
+            <a class = "din white" href="">10</a>
+            <div class = "inline-block doublefont-container">
+                <h2 class = "label">Next</h2>
+                <h2 class = "overlay">Next</h2>
+            </div>            
+        </div>
+        <script src="../js/page2.js" async defer></script>
+        <script src="../js/mobile_menu.js" async defer></script>
+    </body>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../css/reset.css">
+        <link rel="stylesheet" href="https://use.typekit.net/mjr7mjf.css">
+        <link rel="stylesheet" href="https://use.typekit.net/tiw7qxb.css">
+        <link rel="stylesheet" href="../css/typography.css">
+        <link rel="stylesheet" href="../css/general.css">
+        <link rel="stylesheet" href="../css/cart.css">
+        <link rel="stylesheet" href="../css/mobile_menu.css">
+        <link rel="stylesheet" href="../css/mobile_cart.css">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <nav id = "navbar">
+            <div class = "inline-block doublefont-container">
+                <a class = "label" href="index.html">Home</a>
+                <a class = "overlay" href="index.html">Home</a>
+            </div>
+            <div class = "inline-block doublefont-container">
+                <a class = "label" href="about.html">About</a>
+                <a class = "overlay" href="about.html">About</a>
+            </div>
+            <div class = "inline-block" id = "logo-container">
+                <img id = "logo" src="../resources/logo.svg" alt="Logo Image">
+                <div class = "inline-block doublefont-container">
+                    <h1 class = "label">Egg<br>Records</h1>
+                    <h1 class = "overlay">Egg<br>Records</h1>
+                </div>
+            </div>
+            
+            <div class = "inline-block doublefont-container">
+                <a class = "label" href="shop.html">Shop</a>
+                <a class = "overlay" href="shop.html">Shop</a>
+            </div>
+            <div class = "inline-block doublefont-container">
+                <a class = "label" href="cart.html">Cart</a>
+                <a class = "overlay" href="cart.html">Cart</a>
+            </div>
+        </nav>
+        <nav id = "mobile-navbar">
+            <img id = "logo" src="../resources/logo.svg" alt="">
+            <div class = "inline-block doublefont-container" onclick="home()">
+                <h1 class = "label">Egg<br>Records</h1>
+                <h1 class = "overlay">Egg<br>Records</h1>
+            </div>
+            <div class = "dropdown inline-block">
+                <input id="check" type="checkbox" name="menu">
+                <label for="check"><img class = "icon" id = "hamburger-menu-icon" src="../resources/hamburger_menu.svg" alt="hamburger-menu"></label>
+                <img class = "icon" id = "cart-icon" src="../resources/cart.svg" alt="cart" onclick="cart()">
+                <div class = "dropdown-content" >
+                    <ul id = "mobile-menu">
+                        <li class= "doublefont-container">
+                            <a class = "label" href="index.html">Home</a>
+                            <a class = "overlay" href="index.html">Home</a>
+                        </li>
+                        <li class= "doublefont-container">
+                            <a class = "label" href="about.html">About</a>
+                            <a class = "overlay" href="about.html">About</a>
+                        </li>
+                        <li class= "doublefont-container">
+                            <a class = "label" href="shop.html">Shop</a>
+                            <a class = "overlay" href="shop.html">Shop</a>
+                        </li>
+                        <li class= "doublefont-container">
+                            <a class = "label" href="cart.html">Cart</a>
+                            <a class = "overlay" href="cart.html">Cart</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div id = "your-cart" class= "margin-left doublefont-container">
+            <h2 class= "label">YOUR CART</h2>
+            <h2 class= "overlay">YOUR CART</h2>
+        </div>
+        <div id = "page-content" class = "">
+            <div id = "left-box" class= "inline-block"> 
+                <div class = "lid din-alternate white"><h3 id = "item-num">Item 1 of 2</h3></div>
+                <div id = "cart-container">
+                    <div id = "cart">
+                        <div id = "album-cover-container" class= "inline-block">
+                            <img id = "album-cover" src="../album-covers/ac1.jpeg" alt="">
+                        </div>
+                        <div id = "product-description" class= "inline-block">
+                            <div class = "top">
+                                <p id = "album-name"class = "xxx-large din-alternate white">Ramones</p>
+                                <p id = "artist-name" class = "xx-large din-alternate red">The Beatles</p>
+                            </div>
+                            <div class = "bottom">
+                                <p class = "xx-large inline-block din-alternate red">$50.00AUD</p>
+                                <div class= "inline-block">
+                                    <span class = "din-alternate white" id = "multiplication"><p class ="xx-large inline-block">X</p></span>
+                                    <span class = "din-alternate red" id = "number"><p class= "xx-large inline-block">1</p></span>
+                                </div>
+                            </div> 
+                        </div>
+                        <div id = "switcher" class = "inline-block">
+                            <img id = "prev" class = "hide product-manipulation" src="../resources/prev.svg" alt="">
+                            <img id = "next" class= "product-manipulation" src="../resources/next.svg" alt="">
+                        </div>
+                        
+                        <img id = "cancel" class= "product-manipulation" src="../resources/cancel.svg" alt="">
+                    </div>
+                    <div id = "swiper">
+                        <span class="dot bgred"></span>
+                        <span class="dot bgwhite"></span>
+                    </div>
+                </div>
+            </div>
+            <div id = "right-box" class= "inline-block">
+                <div class = "lid doublefont-container">
+                    <h3 class="label">Recommended</h3>
+                    <h3 class="overlay">Recommended</h3>
+                </div>
+                <div id = "right-box-content">
+                    <div id = "recommended-albums">
+                        <div class = "album">
+                            <img src="../album-covers/ac4.jpeg" alt="">
+                            <p class= "larger line-height red din">Eye for an eye</p>
+                            <p class= "larger zero-line-height white din">$50.00AUD</p>
+                        </div>
+                        <div class = "album">
+                            <img src="../album-covers/ac5.jpeg" alt="">
+                            <p class= "larger line-height red din">No basis</p>
+                            <p class= "larger zero-line-height white din">$50.00AUD</p>
+                        </div>
+                        <div class = "album">
+                            <img src="../album-covers/ac6.jpeg" alt="">
+                            <p class= "larger line-height red din">Beginner's luck</p>
+                            <p class= "larger zero-line-height white din">$50.00AUD</p>
+                        </div>
+                    </div>
+                    <div id = "bottom-content">
+                        <div id = "total-price">
+                            <div class= "inline-block doublefont-container">
+                                <h3 class= "label">Total:</h3>
+                                <h3 class= "overlay">Total:</h3>
+                            </div>
+                            <div id = "total" class= "inline-block doublefont-container">
+                                <h3 class= "price label">$100.00AUD</h3>
+                                <h3 class= "price overlay red">$100.00AUD</h3>
+                            </div>
+                        </div>
+                        <button class="din" id = "proceed-to-checkout" onclick="proceedToCheckout()">PROCEED TO CHECKOUT</button>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        
+
+        <script src="../js/cart.js" async defer></script>
+        <script src="../js/mobile_menu.js" async defer></script>
+    </body>
+</html>

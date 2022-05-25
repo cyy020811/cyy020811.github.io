@@ -1,0 +1,178 @@
+.lid{
+    /* margin-bottom: .3em; */
+    width: 100%;
+}
+
+#item-num{
+    font-size: xx-large;
+}
+
+
+#recommended-albums{
+    margin-top: 2em;
+    margin-bottom: 2em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.album{
+    height: 200px;
+    width: 140px;
+    /* background-color: rgb(110, 92, 92); */
+}
+
+#page-content{
+    display: flex;
+    align-items: flex-start;
+}
+
+.larger{
+    font-size: 1.25em;
+}
+
+#your-cart{
+    margin-top: 2em;
+}
+
+#total-price{
+    position: relative;
+}
+
+#total{
+    position: absolute;
+    right: 0;
+}
+
+img{
+    max-width: 100%;
+}
+
+#bottom-content{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+button{
+    border: none;
+    width: 100%;
+    background-color: #E9EA5F;
+    border-radius: 0;
+    padding: 8px 16px;
+    text-transform: uppercase;
+    font-size: x-large;
+}
+
+#left-box{
+    margin-left: 50px;
+    margin-right: 20px;
+    height: 50vh;
+    width: 53vw;
+}
+
+#right-box{
+    height: 50vh;
+    width: 38vw;
+}
+
+#right-box-content{
+    position: relative;
+    /* background-color: aquamarine; */
+    border-top: 2px solid white;
+    height: 38vh;
+}
+
+#cart-container{
+    position: relative;
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    height: 38vh;
+}
+
+.product-manipulation{
+    height: 35px;
+    max-height: 100%;
+}
+
+#cart{
+    margin-top: 3.5em;
+    position: relative;
+    height:  25vh;
+    /* background-color: brown; */
+}
+
+#product-description{
+    position: relative;
+    height: 100%;
+    width: 200px;
+}
+
+#cancel{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.margin-left{
+    margin-left: 50px;
+}
+
+.top{
+    position: absolute;
+    top: 15px;
+}
+
+.bottom{
+    position: absolute;
+    bottom: 10px;
+}
+
+#switcher{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#album-cover-container{
+    height: 100%;
+    width: 25vh;
+    background-color: white;
+}
+
+#album-cover{
+    max-height: 100%;
+}
+
+.bgred{
+    background-color: #EF3F5B;
+}
+
+h2{
+    font-size: 1.5em;
+    margin-bottom: .5em;
+}
+
+.xx-large{
+    font-size: xx-large;
+}
+
+.xxx-large{
+    font-size: 2.5em;
+}
+
+#swiper{
+    position: absolute;
+    display: flex;
+    gap: 1em;
+    left: 50%;
+    bottom: 5%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.dot{
+    height: 15px;
+    width: 15px;
+    /* background-color: #FFFFFF; */
+    border-radius: 50%;
+    display: inline-block;
+}

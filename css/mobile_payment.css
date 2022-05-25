@@ -1,0 +1,18 @@
+@media screen and (max-width:1000px){
+    .vert-seperator, #right-box{
+        display: none;
+    }
+    #left-box{
+        width: 100vw;
+        padding: 0em 2em 0em;
+    }
+    #back > .overlay, #back >.label{
+        font-size: .9em;
+    }
+    #back > .overlay{
+        top: 7px;
+    }
+    #mobile-btn-content{
+        padding-top: 2em;
+    }
+}

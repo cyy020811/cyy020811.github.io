@@ -1,0 +1,167 @@
+.side-space{
+    width: 9.5vw;
+}
+
+#page-content{
+    width: 79vw;
+}
+
+#product-container{
+    display: flex;
+    align-items: flex-start;
+    height: 30vw;
+}
+
+.red-bg{
+    background-color: #EF3F5B;
+}
+
+.white-bg{
+    background-color: white;
+}
+
+#purchase{
+    border-radius: 2px;
+}
+
+#name-and-price{
+    padding-top: 3.6vw;
+    height: 5vw;
+    width: 100%;
+}
+
+#see-info{
+    width: 50%;
+    border: none;
+    height: auto;
+    font-size: large;
+    padding: 5px 10px;
+    border-radius: 5px 0 0 0;
+    background-color: white;
+}
+
+#text{
+    height: 16vw;
+    position: relative;
+}
+
+#see-tracklist{
+    width: 50%;
+    border: none;
+    height: auto;
+    background-color: #EF3F5B;
+    font-size: large;
+    padding: 5px 10px;
+    border-radius: 0 5px 0 0;
+}
+
+#text > p{
+    width: 80%;
+    height: auto;
+    text-align: center;
+    position: absolute;
+    /* background-color: #41dbb7; */
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    font-size: x-large;
+}
+
+#info, #tracklist{
+    font-size: medium;
+}
+
+#back{
+    margin-bottom: 1em;
+}
+
+#info-tracklist{
+    padding-top: 2.2vw;
+    font-size: 0;
+}
+
+#info-and-price{
+    height: 30vw;
+    width: 65%;
+    
+}
+
+#names{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    border-bottom: 4px solid white;
+}
+
+#album-img-container{
+    width: 30vw;
+    height: 30vw;
+    font-size: 0;
+}
+
+img{
+    max-height: 100%;
+}
+
+#purchase{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+#add-to-cart-btn{
+    border: none;
+    background-color: #FAFB65;
+    border-radius: 0;
+    padding: 8px 16px;
+    text-transform: uppercase;
+    font-size: x-large;
+}
+
+#mobile-add-to-cart-btn{
+    border: none;
+    background-color: #FAFB65;
+    border-radius: 0;
+    padding: 8px 16px;
+    text-transform: uppercase;
+    font-size: x-large;
+}
+
+#added-to-cart{
+    width: 100%;
+    padding: 8px 20px;
+    text-transform: uppercase;
+    font-size: x-large;
+}
+
+#mobile-added-to-cart{
+    padding: 8px 20px;
+    text-transform: uppercase;
+    font-size: x-large;
+}
+
+#price{
+    padding: 8px 16px;
+    font-size: x-large;
+    align-items: center;
+}
+
+#mobile-price{
+    padding: 8px 16px;
+    font-size: x-large;
+    align-items: center;
+}
+
+#seperator{
+    width: 1vw;
+}
+
+#album-name{
+    line-height: 100%;
+    font-size: 2.275em;
+}
+
+#artist-name{
+    line-height: 160%;
+    font-size: 1.75em;
+}

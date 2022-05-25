@@ -1,0 +1,63 @@
+.label{
+    font-family: industry-inc-outline, sans-serif;
+    font-weight: 400;
+    font-style: normal; 
+    color: #A7EAF5;
+    /* position: relative; */
+}
+
+.overlay{
+    font-family: industry-inc-inline-stroke, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #FCFD7F;
+    position:absolute;
+    left: 0px;
+    top: 0px;
+}
+
+.red{
+    color: #EF3F5B;
+}
+
+.white{
+    color: #ffffff;
+}
+
+.din{
+    font-family: din-condensed, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.din-alternate{
+    font-family: 'DIN Alternate', sans-serif;                                  
+}
+
+h1.overlay{
+    color: #EF3F5B;
+}
+
+.content{
+    font-family: din-condensed, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+a.overlay{
+    top: 4px;
+}
+
+h1{
+    font-size: 50px;
+    text-align: center;
+    line-height: normal;
+}
+
+h2{
+    font-size: 23px;
+}
+
+.larger-size{
+    font-size: 1.25em;
+}

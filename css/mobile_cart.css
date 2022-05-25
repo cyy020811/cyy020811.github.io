@@ -1,0 +1,49 @@
+@media screen and (max-width:900px){
+    #page-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 1.5em;
+    }
+    #left-box, #right-box{
+        display: block;
+        width: 90vw;
+        height: auto;
+        margin-bottom: 3em;
+        margin-left: 0;
+        margin-right: 0;
+    }
+    #your-cart{
+        text-align: center;
+        font-size: larger;
+    }
+    #your-cart > .overlay{
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    #cart, #album-cover-container{
+        height: 16vh;
+    }
+    #album-cover-container{
+        width: 16vh;
+    }
+    #product-description{
+        font-size: .7em;
+    }
+    .xx-large{
+        font-size: 1.6em;
+    }
+    .lid{
+        font-size: x-large;
+    }
+    #cart-container{
+        height: 28vh;
+    }
+    .lid > #item-num{
+        font-size: larger;
+    }
+    .album{
+        height: 180px;
+        width: 115px;
+    }
+}
