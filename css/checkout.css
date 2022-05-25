@@ -173,3 +173,7 @@ h3{
 ::placeholder{
     opacity: 0.7;
 }
+
+#mobile-payment-btn{
+    display: none;
+}

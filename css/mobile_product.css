@@ -51,6 +51,7 @@
         text-align: center;
     }
     #mobile-purchase{
+        display: block;
         margin-top: 2em;
     }
 }

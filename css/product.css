@@ -30,6 +30,10 @@
     width: 100%;
 }
 
+#mobile-purchase{
+    display: none;
+}
+
 #see-info{
     width: 50%;
     border: none;

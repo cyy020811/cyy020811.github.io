@@ -186,6 +186,10 @@ h3{
     width: 100%;
 }
 
+#mobile-btn-content{
+    display: none;
+}
+
 ::placeholder{
     opacity: 0.7;
 }
