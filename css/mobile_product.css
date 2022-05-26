@@ -1,3 +1,4 @@
+/* Stylesheet for mobile version of product page */
 @media screen and (max-width:1200px){
     #text > p{
         font-size: large;

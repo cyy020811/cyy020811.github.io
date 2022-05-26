@@ -11,6 +11,8 @@ seeTracklist.addEventListener("click", showTracklist);
 seeInfo.addEventListener("click", showInfo);
 addToCartBtn.addEventListener("click", addToCart);
 mobileAddToCartBtn.addEventListener("click", mobileAddToCart);
+
+// switch to the tracklist
 function showTracklist(){
     if(isTracklist == false){
         info.classList.add("hide");
@@ -21,6 +23,7 @@ function showTracklist(){
     }
 }
 
+// switch to the album info
 function showInfo(){
     if(isTracklist == true){
         tracklist.classList.add("hide");
@@ -31,6 +34,7 @@ function showInfo(){
     }
 }
 
+// mobile version of the add to cart function
 function mobileAddToCart(){
     const mobilePrice = document.getElementById("mobile-price");
     mobilePrice.classList.add("hide");
@@ -40,6 +44,7 @@ function mobileAddToCart(){
     document.getElementById("mobile-added-to-cart").classList.remove("hide");
 }
 
+// shows added to cart after the button is clicked
 function addToCart(){
     const price = document.getElementById("price");
     price.classList.add("hide");

@@ -3,12 +3,14 @@ const genre_list = ["ALL","ROCK","POP","JAZZ","R&B","ELECTRONIC","COUNTRY","R&B"
 const genres_container = document.getElementById("genres-container");
 genres_container.addEventListener("DOMContentLoaded", createGenres());
 
+// create all the genres and append it to the container
 function createGenres(){
     for (let index = 1; index <= 14; index++) {
         genres_container.appendChild(generateGenre(index));
     }
 }
 
+// generate one genre 
 function generateGenre(num){
     let container = document.createElement("div");
     container.classList.add("genre");
@@ -23,6 +25,7 @@ function generateGenre(num){
     return container;
 }
 
+// return to the shop
 function returnShop(){
     window.location.href = "../html/shop.html";
 }

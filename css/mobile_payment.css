@@ -1,3 +1,4 @@
+/* Stylesheet for mobile version of payment page */
 @media screen and (max-width:1000px){
     .vert-seperator, #right-box{
         display: none;

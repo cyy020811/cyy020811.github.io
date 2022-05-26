@@ -19,6 +19,7 @@ all_genres.addEventListener("click",showAllGenres);
 document.getElementById("prev").addEventListener("click",prevPage);
 const genre = document.getElementsByClassName("genre");
 
+// responsive design that shows all genres in an individual page
 if(width <= 760){
     for (let i = 6; i < 10; i++) {
         genre[i].classList.add("hide");
@@ -27,20 +28,24 @@ if(width <= 760){
     all_genres.addEventListener("click",mobileGenres);
 }
 
+// go to the mobile version of genres
 function mobileGenres(){
     window.location.href = "../html/mobile_genres.html";
 }
 
+// go to the previous page(shop)
 function prevPage(){
     window.location.href = "../html/shop.html";
 }
 
+// create all the products and append them to the product list
 function createProductList() {
     for (let index = 25; index <= 48; index++) {
         product_list.appendChild(generateAlbum(index));
     }
 }
 
+// create all the genres and append them to the genres
 function createGenres() {
     for (let index = 1; index <= 10; index++) {
         genres.appendChild(generateGenre(index));
@@ -48,13 +53,14 @@ function createGenres() {
     console.log("Genre created");
 }
 
+// show more genres by creating more and append them to the same section
 function showAllGenres(){
     for (let index = 11; index <= 14; index++) {
         genres.appendChild(generateGenre(index));
-        console.log("hi");
     }
 }
 
+// generate a product that is going to be appended to the product list
 function generateAlbum(num){
     let container = document.createElement("div");
     container.classList.add("album-container");
@@ -72,6 +78,7 @@ function generateAlbum(num){
     return container;
 }
 
+// generate a genre that's going to be appendd to the genres
 function generateGenre(num){
     let container = document.createElement("div");
     container.classList.add("genre");

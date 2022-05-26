@@ -9,10 +9,13 @@ prev.addEventListener("click", prevItem);
 next.addEventListener("click", nextItem);
 cancel.addEventListener("click", cancelItem);
 
+// Item adjustment for responsive design
 if(width < 900){
     document.getElementById("your-cart").classList.remove("margin-left");
 }
 
+
+// show the previous item in the cart
 function prevItem(){
     if(itemIndex > 1){
         itemIndex--;
@@ -28,6 +31,7 @@ function prevItem(){
     }
 }
 
+// show the next item in the cart
 function nextItem(){
     if(itemIndex == 1){
         itemIndex++;
@@ -44,6 +48,7 @@ function nextItem(){
     }
 }
 
+// delete the item in the cart
 function cancelItem(){
     if(itemIndex == 1){
         nextItem();
@@ -62,6 +67,7 @@ function cancelItem(){
     document.getElementById("item-num").innerHTML = "Item 1 of 1";
 }
 
+// proceed to the checkout page
 function proceedToCheckout(){
     window.location.href = "../html/checkout.html";
 }
